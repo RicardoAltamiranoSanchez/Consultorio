@@ -1,10 +1,12 @@
 import express from 'express';
-import  {ObtenerVeterinario, Perfiles} from '../controllers/VeterinarioControllers.js';
+import  {Registrar,Login} from '../controllers/VeterinarioControllers.js';
 const router =express.Router();
 
-router.get('/',ObtenerVeterinario);
+router.get('/login',Login);
+router.post('/',Registrar);
 
-router.get('/login',Perfiles);
+
+
 
 
 export default router;

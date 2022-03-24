@@ -10,6 +10,7 @@ nombre:{
 },
 password:{
  type:String,
+trim:true,
 required:true
 },
 correo:{
